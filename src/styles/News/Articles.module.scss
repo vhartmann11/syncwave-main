@@ -1,0 +1,70 @@
+.Article {
+    padding-left: 5rem;
+    padding-right: 5rem;
+
+    img {
+        margin-bottom: 2rem;
+        border-radius: 20px;
+    }
+
+    .ArticleInfo {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+        display: flex;
+        max-width: 48rem;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        color: rgb(242, 242, 242, 1);
+
+        .ArticleDesc {
+            margin: 0;
+            font-family: Inter, sans-serif;
+            padding-bottom: 1rem;
+            color: rgb(199, 199, 199, 1);
+        }
+
+        .ArticleDate {
+            color: #99c455;
+            margin: auto;
+        }
+    }
+}
+
+
+p {
+    margin: 0;
+    font-family: Inter, sans-serif;
+    padding-bottom: 1rem;
+    color: rgb(199, 199, 199, 1);
+}
+
+.Btn {
+    margin-top: 3rem;
+    text-decoration: none;
+    display: flex;
+    height: 3rem;
+    width: 9rem;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9999px;
+    background-color: #99c455;
+    font-size: .875rem;
+    line-height: 1.25rem;
+    color: #000000;
+    transition: .2s;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid transparent;
+    margin-bottom: 1rem;
+
+    &:hover {
+        border-color: #99c455;
+        background-color: transparent;
+        color: white;
+        transform: scale(1.05);
+    }
+}

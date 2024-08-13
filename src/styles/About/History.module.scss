@@ -1,0 +1,300 @@
+.History {
+    .Container {
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+
+        .Wrapper {
+            margin-left: auto;
+            margin-right: auto;
+            display: grid;
+            max-width: 56rem;
+            place-items: center;
+            row-gap: 1.5rem;
+
+            .HistoryGr {
+                display: grid;
+                transition-property: all;
+                transition-duration: 1s;
+                transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    place-items: end;
+                    border-radius: 0.5rem;
+                    order: -9999;
+                }
+
+                .Title {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: flex-end;
+
+                    h2 {
+                        font-family: Plus Jakarta Sans, sans-serif;
+                        font-size: 3rem;
+                        font-weight: 700;
+                        letter-spacing: -.05em;
+                        color: rgb(223, 223, 226, 1);
+                    }
+
+                    .Description {
+                        font-family: Plus Jakarta Sans, sans-serif;
+                        font-size: 3rem;
+                        font-weight: 700;
+                        letter-spacing: -.05em;
+                        color: rgb(153 196 85);
+                        padding-left: 2rem;
+                        padding-bottom: 2rem;
+                    }
+
+                    p {
+                        font-family: Inter, sans-serif;
+                        font-size: 1rem;
+                        line-height: 1.5rem;
+                        font-weight: 400;
+                        padding-left: 2.25rem;
+                        padding-right: 2.25rem;
+                        padding-bottom: 2.5rem;
+                        color: rgb(199, 199, 199, 1);
+                    }
+                }
+            }
+
+            .Strategy {
+                display: grid;
+                place-items: center;
+                transition-property: all;
+                transition-duration: 1s;
+                transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                p {
+                    font-family: Inter, sans-serif;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 400;
+                    padding-left: 2.25rem;
+                    padding-right: 2.25rem;
+                    padding-bottom: 2.5rem;
+                    color: rgb(199, 199, 199, 1);
+                }
+
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    place-items: end;
+                    border-radius: 0.5rem;
+                }
+            }
+
+            .Leadership {
+                display: grid;
+                place-items: center;
+                padding-bottom: 7rem;
+                transition-property: all;
+                transition-duration: 1s;
+                transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+                grid-template-columns: repeat(5, minmax(0, 1fr));
+
+                img {
+                    display: block;
+                    max-width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    grid-column: span 3 / span 3;
+                    border-radius: .5rem;
+                }
+
+                p {
+                    font-family: Inter, sans-serif;
+                    font-size: 1rem;
+                    line-height: 1.5rem;
+                    font-weight: 400;
+                    grid-column: span 2 / span 2;
+                    padding: 2.5rem;
+                    color: rgb(199, 199, 199, 1);
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1200px) {
+        .Container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .Wrapper {
+                max-width: 48rem;
+
+                .HistoryGr {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                    .Title {
+                        h2 {
+                            font-size: 2.5rem;
+                        }
+
+                        .Description {
+                            font-size: 2.5rem;
+                            padding-left: 1.5rem;
+                            padding-bottom: 1.5rem;
+                        }
+
+                        p {
+                            font-size: 1.25rem;
+                            padding-left: 1.5rem;
+                            padding-right: 1.5rem;
+                            padding-bottom: 2rem;
+                        }
+                    }
+                }
+
+                .Strategy {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                    p {
+                        font-size: 1.25rem;
+                    }
+                }
+
+                .Leadership {
+                    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+                    img {
+                        grid-column: span 2 / span 2;
+                    }
+
+                    p {
+                        grid-column: span 2 / span 2;
+                        padding: 1.5rem;
+                        font-size: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 900px) {
+        .Container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+
+            .Wrapper {
+                max-width: 40rem;
+
+                .HistoryGr {
+                    grid-template-columns: 1fr;
+
+                    .Title {
+                        h2 {
+                            font-size: 2rem;
+                        }
+
+                        .Description {
+                            font-size: 2rem;
+                            padding-left: 1rem;
+                            padding-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 1rem;
+                            padding-left: 1rem;
+                            padding-right: 1rem;
+                            padding-bottom: 1.5rem;
+                        }
+                    }
+                }
+
+                .Strategy {
+                    grid-template-columns: 1fr;
+
+                    p {
+                        font-size: 1rem;
+                        padding-left: 1rem;
+                        padding-right: 1rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+
+                .Leadership {
+                    grid-template-columns: 1fr;
+
+                    img {
+                        grid-column: span 1 / span 1;
+                    }
+
+                    p {
+                        grid-column: span 1 / span 1;
+                        padding: 1rem;
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width: 600px) {
+        .Container {
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            .Wrapper {
+                max-width: 100%;
+
+                .HistoryGr {
+                    grid-template-columns: 1fr;
+
+                    .Title {
+                        h2 {
+                            font-size: 1.5rem;
+                        }
+
+                        .Description {
+                            font-size: 1.5rem;
+                            padding-left: 0.5rem;
+                            padding-bottom: 1rem;
+                        }
+
+                        p {
+                            font-size: 0.855rem;
+                            padding-left: 0.5rem;
+                            padding-right: 0.5rem;
+                            padding-bottom: 1rem;
+                        }
+                    }
+                }
+
+                .Strategy {
+                    grid-template-columns: 1fr;
+
+                    p {
+                        font-size: 0.855rem;
+                        padding-left: 0.5rem;
+                        padding-right: 0.5rem;
+                        padding-bottom: 1rem;
+                    }
+                }
+
+                .Leadership {
+                    grid-template-columns: 1fr;
+
+                    img {
+                        grid-column: span 1 / span 1;
+                    }
+
+                    p {
+                        grid-column: span 1 / span 1;
+                        padding: 1rem;
+                        font-size: 0.855rem;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,188 @@
+.Team {
+    padding: 2rem;
+}
+
+.Header {
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+
+    h2 {
+        font-family: Plus Jakarta Sans, sans-serif;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 1.25;
+        letter-spacing: -.05em;
+        color: rgb(223, 223, 226, 1);
+        max-width: 100%;
+
+        span {
+            color: rgb(153, 196, 85, 1);
+        }
+    }
+}
+
+.TeamGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.TeamMember {
+    padding: 3rem;
+    border-radius: 8px;
+    text-align: center;
+
+    img {
+        height: 420px;
+        width: 540px;
+        max-width: 100%;
+        border-radius: 1.25rem;
+        object-fit: cover;
+    }
+
+    h3 {
+        margin-top: 1rem;
+        font-family: Plus Jakarta Sans, sans-serif;
+        font-weight: 700;
+        letter-spacing: -.05em;
+        color: rgb(255, 255, 255, 1);
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    h4 {
+        margin: 0;
+        font-family: Inter, sans-serif;
+        font-weight: 300;
+        color: rgb(153, 196, 85, 1);
+        
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+    }
+
+    p {
+        margin-top: 0.5rem;
+        font-size: 1rem;
+        color: rgb(199, 199, 199, 1);
+    }
+}
+
+@media (max-width: 1200px) {
+    .TeamSection {
+        padding: 1.5rem;
+    }
+
+    .Header {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
+    .TeamGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .TeamMember {
+        padding: 2rem;
+
+        img {
+            height: 350px;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        h4 {
+            margin-top: 0;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    .TeamSection {
+        padding: 1rem;
+    }
+
+    .Header {
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .TeamGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .TeamMember {
+        padding: 1.5rem;
+
+        img {
+            height: 300px;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 1.4rem;
+        }
+
+        h4 {
+            margin-top: 0;
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size:1rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .TeamSection {
+        padding: 0.5rem;
+    }
+
+    .Header {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    .TeamGrid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .TeamMember {
+        padding: 1rem;
+
+        img {
+            height: 250px;
+            width: 100%;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+        }
+
+        h4 {
+            margin-top: 0;
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        p {
+            font-size: 0.855rem;
+        }
+    }
+}

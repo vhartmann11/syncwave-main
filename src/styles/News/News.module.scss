@@ -1,0 +1,135 @@
+.News {
+    position: relative;
+    margin: 3.5rem auto;
+    max-width: 80rem;
+    padding: 0;
+
+    .Title {
+        display: flex;
+        justify-content: center;
+    }
+
+    .Filter {
+        display: flex;
+        justify-content: center;
+
+        .Btn {
+            margin-top: 1rem;
+            padding: 10px 20px;
+            cursor: pointer;
+            background-color: transparent;
+            border: none;
+            font-size: 16px;
+            transition: 0.3s;
+            opacity: 0.5;
+        }
+        .Btn:hover {
+            opacity: 0.8;
+        }
+
+        .Active {
+            position: relative;
+            font-size: 18px;
+            opacity: 1;
+        }
+
+        .Active::after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -5px;
+            width: 50%; // Ajuste a largura da linha conforme necessário
+            height: 2px;
+            background-color: #81a648;
+        }
+    }
+
+    .VideoList {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        margin-top: 3.5rem;
+        display: grid;
+        max-width: 80rem;
+        column-gap: 2rem;
+        row-gap: 3.5rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        .VideoItem {
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+            cursor: pointer;
+            transition: transform 0.3s ease; // Adiciona a transição
+
+            &:hover {
+                transform: scale(1.05); // Aumenta o tamanho em 5% ao passar o mouse
+            }
+
+            .VideoImage {
+                width: 100%;
+                max-width: 400px;
+                height: 225px; // Defina uma altura fixa para garantir que todas as imagens tenham a mesma altura
+                object-fit: cover; // Isso garante que a imagem seja redimensionada corretamente para caber na área especificada
+                display: block;
+                margin: 0 auto;
+            }
+
+            .VideoDate {
+                text-align: center;
+                color: #81a648;
+                margin: 5px 0;
+            }
+
+            .VideoTitle {
+                text-align: center;
+                font-size: 1.5em;
+                margin: 10px 0;
+            }
+
+            .VideoDescription {
+                text-align: center;
+                color: #969696;
+            }
+        }
+    }
+
+    .Pagination {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 0.5rem;
+
+        .PaginationBtn {
+            padding: 10px 15px;
+            cursor: pointer;
+            background-color: #272727;
+            border: none;
+            border-radius: 10px;
+            transition: background-color 0.3s;
+
+            &:hover {
+                background-color: #daa520;
+                opacity: 0.5;
+            }
+        }
+
+        .ActivePage {
+            background-color: #81a648;
+            color: #fff;
+            // border: 1px solid #81a648;
+        }
+
+        .Disabled {
+            cursor: not-allowed;
+            opacity: 0.2;
+
+            &:hover {
+                background-color: rgb(68, 0, 0);
+            }
+        }
+    }
+}

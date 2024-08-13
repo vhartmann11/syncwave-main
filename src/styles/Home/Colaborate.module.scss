@@ -1,0 +1,133 @@
+.Colaborate {
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    position: relative;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-property: all;
+    transition-duration: 1.2s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    margin-top: 20rem;
+    margin-bottom: 7rem;
+
+    .Imagem1 {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        z-index: -10;
+        width: 18rem;
+        border-radius: .5rem;
+        transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+        right: 50%;
+        top: 4rem;
+        transform: translate(288px, 0px) rotate(15deg);
+        opacity: .3;
+    }
+
+    .Imagem2 {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        top: 42%;
+        z-index: -10;
+        width: 18rem;
+        border-radius: .5rem;
+        right: 50%;
+        transform: translate(-288px, -50px) rotate(-15deg) scale(0.8, 0.8);
+        opacity: .3;
+    }
+
+    .Imagem3 {
+        max-width: 100%;
+        height: auto;
+        object-fit: cover;
+        position: absolute;
+        z-index: -10;
+        width: 18rem;
+        border-radius: .5rem;
+        bottom: 18%;
+        left: 50%;
+        transform: translate(288px, 30px) rotate(10deg) scale(0.95, 0.95);
+        opacity: .3;
+    }
+
+    .Container {
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+        z-index: 30;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+
+        .Title {
+            max-width: 48rem;
+            text-align: center;
+            font-family: Plus Jakarta Sans, sans-serif;
+            font-weight: 800;
+            letter-spacing: -.05em;
+            color: rgb(223, 223, 226, 1);
+            font-size: 4.5rem;
+            line-height: 1;
+        }
+
+        .ColaborateButton {
+            height: 2.75rem;
+            width: 9rem;
+            border-radius: 9999px;
+            --tw-bg-opacity: 1;
+            background-color: #99c455;
+            transition-property: all;
+            transition-duration: .2s;
+            transition-timing-function: linear;
+            z-index: 50;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 2rem;
+            display: flex;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: black;
+            border: 2px solid transparent;
+            margin-top: 5rem;
+
+            &:hover {
+                border-color: #99c455;
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .Colaborate {
+        margin-top: 15rem;
+        margin-bottom: 5rem;
+        .Container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            .Title {
+                font-size: 3rem;
+            }
+
+            .ColaborateButton {
+                margin-top: 4rem;
+            }
+        }
+
+    }
+
+}

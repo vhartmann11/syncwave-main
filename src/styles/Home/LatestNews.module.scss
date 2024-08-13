@@ -1,0 +1,289 @@
+.LatestNews {
+    text-decoration: none;
+    margin-top: 20rem;
+    margin-bottom: 15rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.TitleNews {
+    margin-bottom: 4rem;
+    font-size: 3rem;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: -.05em;
+    color: #fff;
+    text-align: center;
+
+    span {
+        color: #99c455;
+    }
+}
+
+.NewsContainer {
+    display: grid;
+    column-gap: 3rem;
+    row-gap: 3rem;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    place-items: start;
+    padding-left: 8rem;
+    padding-right: 8rem;
+
+    @media (max-width: 1024px) {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        overflow: hidden;
+    }
+
+    @media (max-width: 768px) {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        padding-left: 1rem;
+        padding-right: 1rem;
+        overflow: hidden;
+    }
+}
+
+.NewsMain {
+    list-style: none;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(191, 116, 214, 1);
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(.4, 0, .2, 1);
+}
+
+.NewDate {
+    text-decoration: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.Month,
+.Day {
+    list-style: none;
+    font-weight: 400;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    margin: 0;
+    font-family: Inter, sans-serif;
+    font-size: 3rem;
+    line-height: 1;
+    color: rgb(199, 199, 199, 1);
+}
+
+.Year {
+    list-style: none;
+    cursor: pointer;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    font-family: Inter, sans-serif;
+    font-weight: 200;
+    color: rgb(153, 196, 85, 1);
+}
+
+.NewDescription {
+    list-style: none;
+    font-weight: 400;
+    color: rgb(191, 116, 214, 1);
+    cursor: pointer;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    position: relative;
+    max-width: 18rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
+}
+
+h3 {
+    list-style: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    letter-spacing: -.025em;
+    overflow-wrap: break-word;
+    font-family: Plus Jakarta Sans, sans-serif;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    font-weight: 700;
+    color: rgb(199, 199, 199, 1);
+    text-decoration: none;
+}
+
+.NewsButton {
+    position: relative;
+    font-weight: 400;
+    color: rgb(191, 116, 214, 1);
+    margin-top: 1rem;
+}
+
+.NewsButton .Button {
+    position: relative;
+    font-weight: 400;
+    color: rgb(191, 116, 214, 1);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.NewsButton .Button::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(to right, #d8b4fe, #a855f7);
+    transition: width 0.3s ease;
+}
+
+.NewsButton .Button:hover::after {
+    width: 100%;
+}
+
+.NewsInfo {
+    height: 2.75rem;
+    width: 9rem;
+    border-radius: 9999px;
+    background-color: rgb(153, 196, 85, 1);
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ButtonInfo {
+    height: 2.75rem;
+    width: 9rem;
+    border-radius: 9999px;
+    background-color: #99c455;
+    transition-property: all;
+    transition-duration: .2s;
+    transition-timing-function: linear;
+    z-index: 50;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    border: 2px solid transparent;
+    margin-top: 6rem;
+    position: relative;
+}
+
+.ButtonInfo:hover {
+    border-color: #99c455;
+    background-color: transparent;
+    color: white;
+}
+
+.New {
+    font-weight: 400;
+    color: rgb(191, 116, 214, 1);
+    border-width: 0;
+    border-style: solid;
+    border-color: #e5e7eb;
+    position: relative;
+    display: flex;
+}
+
+.NewDescription,
+.NewDate {
+    position: relative;
+    z-index: 10;
+    background-color: transparent;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.NewsDetails {
+    position: absolute;
+    top: -20%;
+    left: -20%;
+    width: 140%;
+    height: 140%;
+    transition-duration: .3s;
+    transform: translateY(1.5rem);
+    opacity: .07;
+    z-index: 5;
+    border-radius: 2.5rem;
+    overflow: hidden;
+}
+
+.New:hover .NewsDetails {
+    opacity: .35;
+    transform: translateY(0);
+}
+
+.DetailsImage {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+@media (max-width: 1024px) {
+    .TitleNews {
+        color: #fff;
+        font-size: 2.5rem;
+    }
+
+    .NewsContainer {
+        column-gap: 2rem;
+    }
+
+    .NewDescription {
+        max-width: 16rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .TitleNews {
+        font-size: 2rem;
+    }
+
+    .NewsContainer {
+        column-gap: 1rem;
+        row-gap: 2rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .NewDescription {
+        max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .NewDate .Month,
+    .NewDate .Day,
+    .NewDate .Year {
+        font-size: 2rem;
+    }
+}

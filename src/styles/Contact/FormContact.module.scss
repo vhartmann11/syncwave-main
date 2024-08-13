@@ -1,0 +1,138 @@
+.FormContact {
+    .Contact {
+        overflow: hidden;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        padding-left: 5rem;
+        padding-right: 5rem;
+        margin-bottom: 5rem;
+
+        .Form {
+            width: 100%;
+            max-width: 32rem;
+
+            .Title {
+                margin: 0 0 3.5rem 0;
+                letter-spacing: -.025em;
+                font-family: Plus Jakarta Sans, sans-serif;
+                font-size: 1.875rem;
+                line-height: 2.25rem;
+                font-weight: 700;
+                color: rgb(223, 223, 226, 1);
+
+                span {
+                    color: #99c455;
+                }
+            }
+
+            .FormTitle {
+                margin-left: -.75rem;
+                margin-right: -.75rem;
+                margin-bottom: 1.5rem;
+                display: flex;
+                flex-wrap: wrap;
+
+                .FormGroup {
+                    padding-left: .75rem;
+                    padding-right: .75rem;
+                    width: 100%;
+
+                    .GroupLabel {
+                        margin-bottom: .5rem;
+                        display: block;
+                        font-size: .75rem;
+                        line-height: 1rem;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        letter-spacing: .025em;
+                        color: rgb(111, 115, 127, 1);
+                    }
+
+                    .GroupInput,
+                    .GroupTxtArea {
+                        box-sizing: border-box;
+                        border-width: 0;
+                        font-family: inherit;
+                        width: 100%;
+                        border-bottom-width: 1px;
+                        border-color: rgb(111, 115, 127, 1);
+                        background-color: transparent;
+                        padding: .75rem 1rem;
+                        color: rgb(223, 223, 226, 1);
+                    }
+
+                    .GroupInput {
+                        height: auto;
+                    }
+
+                    .GroupTxtArea {
+                        font-family: inherit;
+                        height: 12rem;
+                    }
+                }
+            }
+
+            .FormButton {
+                display: flex;
+                align-items: center;
+
+                .Button {
+                    width: 9rem;
+
+                    button {
+                        cursor: pointer;
+                        height: 2.75rem;
+                        width: 100%;
+                        border-radius: 9999px;
+                        background-color: #99c455;
+                        transition: all .2s linear;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: black;
+                        border: 2px solid transparent;
+
+                        &:hover {
+                            border-color: #99c455;
+                            background-color: transparent;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+
+        .Banner {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                max-width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .FormContact {
+        .Contact {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            grid-template-columns: 1fr;
+
+            .Form {
+                max-width: 100%;
+            }
+
+            .Button {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,176 @@
+.OurServices {
+    a {
+        height: 2.75rem;
+        width: 9rem;
+        border-radius: 9999px;
+        background-color: #99c455;
+        transition-property: all;
+        transition-duration: .2s;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        display: flex;
+        cursor: pointer;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        color: black;
+        border: 2px solid transparent;
+
+        &:hover {
+            border-color: #99c455;
+            background-color: transparent;
+            color: white;
+        }
+    }
+
+}
+
+.Container {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    .Services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transition-property: all;
+        transition-duration: 1s;
+
+        .Title {
+            padding-bottom: 1.75rem;
+            font-family: Plus Jakarta Sans, sans-serif;
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.25;
+            letter-spacing: -.05em;
+            color: rgb(223, 223, 226, 1);
+            max-width: 100%;
+
+            span {
+                font-size: 3rem;
+                font-weight: 700;
+                line-height: 1.25;
+                letter-spacing: -.05em;
+                color: rgb(153, 196, 85, 1);
+            }
+        }
+
+        .Description {
+            max-width: 28rem;
+            padding-bottom: 2.5rem;
+            font-family: Inter, sans-serif;
+            color: rgb(176, 176, 176, 1);
+        }
+    }
+
+    .ContainerCards {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        max-width: 45rem;
+        grid-template-rows: repeat(2, minmax(0, 1fr));
+        place-items: center;
+        column-gap: 5rem;
+        row-gap: .75rem;
+        transition-property: all;
+        transition-duration: 1.2s;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+
+        @media (max-width: 768px) {
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            max-width: 100%;
+            padding: 0 1rem;
+        }
+
+        .Cards {
+            position: relative;
+            height: 50vh;
+            width: 100%;
+            overflow: hidden;
+            border-radius: .5rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+
+            &:hover {
+                .CardsDescription {
+                    opacity: 1;
+                }
+
+                .CardImg {
+                    transform: scale(1.1);
+                    filter: brightness(0.2);
+                }
+            }
+
+            .CardImg {
+                display: block;
+                max-width: 100%;
+                height: auto;
+                position: absolute;
+                left: 0;
+                top: 0;
+                z-index: -10;
+                min-height: 100%;
+                min-width: 100%;
+                border-radius: .5rem;
+                object-fit: cover;
+                object-position: top;
+                transition-duration: .3s;
+                transition-timing-function: linear;
+                filter: brightness(0.55);
+
+            }
+
+            .CardsMain {
+                padding-top: 1.75rem;
+
+                .CardsTitle {
+                    display: flex;
+                    align-items: center;
+
+                    .CardIcon {
+                        display: block;
+                        width: 15%;
+                        height: 15%;
+                        fill: #a855f7;
+                        margin-right: 10px;
+                    }
+
+                    h2 {
+                        margin: 0;
+                        display: flex;
+                        align-items: center;
+                        font-family: Plus Jakarta Sans, sans-serif;
+                        font-weight: 700;
+                        letter-spacing: -.05em;
+                        color: rgb(223, 223, 226, 1);
+                        font-size: 2.25rem;
+                        line-height: 2.5rem;
+                        margin-right: .5rem;
+                        margin-left: .5rem;
+                    }
+                }
+
+                p {
+                    margin-top: 3.5rem;
+                    padding-right: 1.75rem;
+                    font-family: Inter, sans-serif;
+                    font-size: .875rem;
+                    line-height: 1.25rem;
+                    font-weight: 300;
+                    color: rgb(176, 176, 176, 1);
+                    transition-duration: .3s;
+                    opacity: 0;
+                }
+
+            }
+        }
+    }
+}

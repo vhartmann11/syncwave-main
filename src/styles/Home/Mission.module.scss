@@ -1,0 +1,109 @@
+.Mission {
+    .Container {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+        border-color: #e5e7eb;
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        display: flex;
+        height: fit-content;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow-y: hidden;
+        text-align: center;
+        padding-left: 3rem;
+        padding-right: 3rem;
+
+        h3 {
+            margin: 0;
+            letter-spacing: -.025em;
+            flex: 2 2 0%;
+            padding-top: 4rem;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            color: rgb(111, 115, 127, 1);
+            transition-property: all;
+            transition-duration: 1s;
+            font-size: 2.25rem;
+            line-height: 2.5rem;
+            cursor: auto;
+        }
+
+        h2 {
+            text-align: center;
+            box-sizing: border-box;
+            margin: 0;
+            letter-spacing: -.025em;
+            max-width: 56rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            font-family: Plus Jakarta Sans, sans-serif;
+            font-weight: 700;
+            --tw-text-opacity: 1;
+            color: rgb(223, 223, 226, 1);
+            transition-property: all;
+            transition-duration: 1.2s;
+            font-size: 2.25rem;
+            line-height: 1.375;
+        }
+    }
+}
+
+/* Responsivo para telas de até 1024px */
+@media (max-width: 1024px) {
+    .Mission {
+        .Container {
+            padding-left: 2rem;
+            padding-right: 2rem;
+            margin-top: 6rem;
+            margin-bottom: 6rem;
+
+            h3 {
+                font-size: 2rem;
+                padding-top: 3rem;
+                line-height: 2.25rem;
+            }
+
+            h2 {
+                font-size: 2rem;
+                padding-left: 1.5rem;
+                padding-right: 1.5rem;
+                padding-top: 2.5rem;
+                padding-bottom: 2.5rem;
+                line-height: 1.375;
+            }
+        }
+    }
+}
+
+/* Responsivo para telas de até 768px */
+@media (max-width: 768px) {
+    .Mission {
+        .Container {
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            margin-top: 4rem;
+            margin-bottom: 7rem;
+
+            h3 {
+                font-size: 1.75rem;
+                padding-top: 2rem;
+                line-height: 2rem;
+            }
+
+            h2 {
+                font-size: 1.75rem;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                line-height: 1.375;
+            }
+        }
+    }
+}

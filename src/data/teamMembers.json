@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Ana Silva",
+        "role": "Diretora Executiva",
+        "imgSrc": "https://img.freepik.com/free-photo/low-angle-confident-business-woman_23-2148692786.jpg",
+        "altText": "Ana Silva",
+        "description": "Ana é a Diretora Executiva da empresa, liderando a equipe com sua vasta experiência em gerenciamento e desenvolvimento estratégico de negócios. Com uma carreira de mais de 10 anos, ela é conhecida por sua capacidade de inovar e impulsionar o crescimento da empresa"
+    },
+    {
+        "name": "Carlos Eduardo",
+        "role": "Gerente de Desenvolvimento de Produto",
+        "imgSrc": "https://img.freepik.com/free-photo/elegant-businessman-office_155003-9641.jpg",
+        "altText": "Carlos Eduardo",
+        "description": "Carlos é o Gerente de Desenvolvimento de Produto, responsável por supervisionar o design e a implementação de novos produtos e serviços. Sua paixão pelo design e pela experiência do usuário o torna um líder eficaz na criação de soluções inovadoras."
+    },
+    {
+        "name": "Lucas Fernandes",
+        "role": "Diretor de Tecnologia",
+        "imgSrc": "https://img.freepik.com/free-photo/young-co-worker-spending-time-office_23-2149328341.jpg",
+        "altText": "Lucas Fernandes",
+        "description": "Lucas é o Diretor de Tecnologia, com a missão de integrar as últimas inovações tecnológicas nas operações da empresa. Ele é conhecido por sua habilidade em transformar desafios técnicos em oportunidades estratégicas."
+    },
+    {
+        "name": "Felipe Almeida",
+        "role": "Gerente de Projetos",
+        "imgSrc": "https://img.freepik.com/free-photo/portrait-smiling-businessman-holding-folder-with-documents_1262-12856.jpg",
+        "altText": "Felipe Almeida",
+        "description": "Felipe é o Gerente de Projetos, coordenando os diversos projetos da empresa com eficiência e precisão. Sua experiência em gerenciamento de tempo e recursos garante que os projetos sejam concluídos no prazo e dentro do orçamento."
+    },
+    {
+        "name": "Gustavo Souza",
+        "role": "Diretor de Parcerias Estratégicas",
+        "imgSrc": "https://img.freepik.com/free-photo/happy-young-caucasian-businessman_171337-735.jpg",
+        "altText": "Gustavo Souza",
+        "description": "Gustavo é o Diretor de Parcerias Estratégicas, trabalhando para estabelecer e manter relações importantes com parceiros e stakeholders. Sua visão estratégica ajuda a expandir a rede de contatos da empresa e a criar novas oportunidades de negócios."
+    }
+]

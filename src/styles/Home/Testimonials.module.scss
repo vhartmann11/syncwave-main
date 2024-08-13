@@ -1,0 +1,119 @@
+.Testimonials {
+    bottom: 0;
+    right: 1rem;
+    fill: #b0b0b0;
+    margin-top: 15rem;
+
+    .TitleArea {
+        margin-top: 15%;
+        overflow: hidden;
+
+        .Title {
+            margin-bottom: 3.5rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            --tw-bg-opacity: .6;
+            text-align: center;
+            box-sizing: border-box;
+            letter-spacing: -.025em;
+            flex: 2 2 0%;
+            font-family: Inter, sans-serif;
+            font-weight: 500;
+            color: rgb(111, 115, 127, 1);
+            font-size: 2.25rem;
+
+            span {
+                color: #68d849;
+            }
+        }
+    }
+
+    .Slide {
+        border: 2px solid #ffffff34;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 55px;
+        background-color: transparent;
+        position: relative;
+
+        svg {
+            display: block;
+            position: absolute;
+            bottom: 0;
+            right: 1rem;
+            opacity: .1;
+        }
+
+        p {
+            margin: 1rem 5rem 3rem 0;
+            opacity: 1;
+
+            span {
+                color: #68d849;
+            }
+        }
+
+        .SlideTitle {
+            opacity: .6;
+        }
+    }
+}
+
+// Media Queries para responsividade
+@media (max-width: 768px) {
+    .Testimonials {
+        .TitleArea {
+            margin-top: 10%;
+
+            .Title {
+                font-size: 1.75rem;
+            }
+        }
+
+        .Slide {
+            padding: 10px;
+            margin: 1rem;
+
+            svg {
+                width: 100px;
+                height: 100px;
+                right: 0.5rem;
+            }
+
+            p {
+                margin: 1rem 1rem 2rem 1rem;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 368px) {
+    .Testimonials {
+        .TitleArea {
+            margin-top: 10%;
+
+            .Title {
+                font-size: 1.75rem; // Reduzir o tamanho da fonte em telas menores
+            }
+        }
+
+        .Slide {
+            padding: 10px; // Ajustar o padding para telas menores
+            margin: 1rem; // Adicionar margem para melhorar o espaçamento entre slides
+
+            svg {
+                width: 100px; // Reduzir o tamanho do ícone em telas menores
+                height: 100px;
+                right: 0.5rem;
+            }
+
+            p {
+                margin: .5rem; // Ajustar margem para telas menores
+            }
+        }
+    }
+}

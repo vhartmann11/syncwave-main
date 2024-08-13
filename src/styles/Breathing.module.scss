@@ -1,0 +1,65 @@
+.BreathingEffect {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: -10;
+    transform: translate(-50%, -50%);
+}
+
+.EffectOne,
+.EffectTwo {
+    position: fixed;
+    height: 35rem;
+    width: 40rem;
+    border-radius: 9999px;
+    background-color: rgba(192, 132, 252, 0.1);
+    mix-blend-mode: multiply;
+    filter: blur(120px);
+    transition-timing-function: linear;
+
+    &.EffectOne {
+        top: 4rem;
+        background-color: rgba(192, 132, 252, 0.1);
+        animation: blob 4s infinite, pulsate 2.3s infinite;
+        /* Adicionando a animação pulsate */
+        animation-delay: 2s;
+    }
+
+    &.EffectTwo {
+        left: 16rem;
+        background-color: rgba(139, 92, 246, 0.1);
+        animation: blob 4s infinite, pulsate 2.3s infinite;
+        /* Adicionando a animação pulsate */
+    }
+}
+
+@keyframes blob {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.2);
+        opacity: 0.7;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
