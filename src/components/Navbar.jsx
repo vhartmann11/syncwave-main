@@ -77,7 +77,7 @@ const Navbar = () => {
                             <div className={styles.ItemsHover}></div>
                         </div>
                     </div>
-                    <img src="https://e0.pxfuel.com/wallpapers/134/821/desktop-wallpaper-black-dog-films-beyonce-and-jay-z-on-the-run-tour-beyonce-concert.jpg" alt="" />
+                    <img src="https://i.imgur.com/rz8Qhed.jpeg" alt="" />
                 </div>
             </nav>
         </>
