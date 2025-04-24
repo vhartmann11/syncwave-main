@@ -65,7 +65,7 @@ const OurServices = () => {
                             description: "Profissional da área de produção cinematográfica, filmes publicitários e programas de televisão, com o critério de colocar em primeiro lugar a criatividade no conteúdo e a diversidade nos estilos de expressão da imagem para criar produtos atrativos para o telespectador."
                         },
                         {
-                            img: "https://www.events.nl/sites/default/files/styles/710x405/public/terren-hurst-blgOFmPIlr0-unsplash.jpg",
+                            img: "http://i0.wp.com/www.rawcharge.com/wp-content/uploads/sites/5/2023/04/cooper-presser.jpeg?fit=680%2C453&ssl=1",
                             icon: <IoBarChart className={styles.CardIcon} />,
                             title: "Marketing Esportivo",
                             description: "Consultoria na construção de academias de formação de jovens, troca de direitos autorais para torneios esportivos, fornecimento de estrelas do esporte como representantes de marcas para que seus produtos possam atingir os clientes-alvo de forma eficaz."
